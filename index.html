@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Music Barber - Upload Files</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-    <link rel="icon" type="image/png" href="{{ url_for('static', filename='images/fav.png') }}"> 
+    <link rel="icon" type="image/png" href="static/images/fav.png"> 
     <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
     <style>
         body {
@@ -20,7 +20,7 @@
             height: 100vh;
             width: 100vw;
             position: relative;
-            background-image: url("{{ url_for('static', filename='images/picofmr.png') }}");
+            background-image: url("static/images/picofmr.png");
             background-size: cover;
             background-position: center;
             background-repeat: no-repeat;
@@ -251,7 +251,7 @@
     <div class="content-container" id="demoContainer">
         <div class="text-center mt-4">
             <audio controls>
-                <source src="{{ url_for('static', filename='audio/mashup1_final.mp3') }}" type="audio/mp3">
+                <source src="static/audio/mashup1_final.mp3" type="audio/mp3">
                 Your browser does not support the audio element.
             </audio>
             <p class="upload-note">Listen to a demo of what the final processed output might sound like.</p>
@@ -286,7 +286,7 @@
 
     <div class="image-container">
         <a href="https://www.youtube.com/watch?v=wvzsbEUGRv4" target="_blank">
-            <img src="{{ url_for('static', filename='images/cleancut.png') }}" alt="Clean Fade">
+            <img src="static/images/cleancut.png" alt="Clean Fade">
         </a>
         <div class="caption">Make your song as clean as this fade</div>
     </div>
